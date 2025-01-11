@@ -1,39 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivia Quiz</title>
+    <title>Quiz Question</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <main>
-        <!-- Question Section -->
-        <section>
-            <h1>Trivia Quiz</h1>
-
-            <!-- Question and Options -->
-            <form>
-                <p>What is the capital of India?</p>
-                <label>
-                    <input type="radio" name="capital" value="New Delhi">
-                    New Delhi
-                </label>
-                <br>
-                <label>
-                    <input type="radio" name="capital" value="Mumbai">
-                    Mumbai
-                </label>
-            </form>
-
-            <!-- Quotation -->
-            <blockquote cite="https://en.wikipedia.org/wiki/Delhi">
-                "New Delhi is the capital of India and an administrative district of NCT Delhi."
-            </blockquote>
-        </section>
-    </main>
+    <div class="quiz-container">
+        <h1>Quiz Question</h1>
+        <form id="quiz-form">
+            <p>What is the capital of India?</p>
+            <label>
+                <input type="radio" name="capital" value="New Delhi"> New Delhi
+            </label><br>
+            <label>
+                <input type="radio" name="capital" value="Mumbai"> Mumbai
+            </label><br>
+            <button type="button" onclick="submitAnswer()">Submit</button>
+        </form>
+        <blockquote>
+            "New Delhi is the capital of India and an administrative district of NCT Delhi." 
+            <cite>— Wikipedia</cite>
+        </blockquote>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
